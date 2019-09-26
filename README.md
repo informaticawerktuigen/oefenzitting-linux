@@ -105,15 +105,27 @@ Navigeer met behulp van `cd` naar deze nieuwe folder.
 ## Opdrachten
 
 Het verdere verloop van deze oefenzitting bestaat uit het oplossen van verschillende opdrachten met behulp van de shell.
+
 Wanneer je een level correct oplost verkrijg je het wachtwoord voor het volgende level.
 **Zorg ervoor dat je voor volgende oefenzitting alle levels hebt opgelost.**
 
 Elk van deze challenges zal nieuwe commando's introduceren. Indien de werking van een commando onduidelijk is, probeer dan gebruik te maken van het commando `man <commando>` of gebruik Google om de werking ervan beter te begrijpen. Maak zeker ook gebruik van onderstaande tips & tricks indien je vast komt te zitten.
 
+### Starten 
 
-### Level 0
+Elk level heeft een eigen folder in de repository. In die folder vind je telkens een bestand genaamd `README.gpg`. Dit bestand is versleuteld met een wachtwoord. Om dit bestand te kunnen openen moet je dus eerst het bestand decrypteren.
 
-Navigeer nu in de shell naar de folder `level0`. In deze folder vind je het bestand README. Lees dit bestand door gebruik te maken van het commando `cat`. Het bestand bevat de instructies die je nodig hebt om het volgende levels op te lossen.
+Een bestand decrypteren doe je door het commando `gpg` te gebruiken. Navigeer naar de folder van level 0 en decrypteer `README.gpg` met wachtwoord `influence`.
+
+``` shell
+$ gpg README.gpg
+```
+
+Indien het wachtwoord correct is ingegeven verschijnt hierna het gedecrypteerde bestand `README`.
+
+De uitdaging van level 0 bestaat er nu uit om door middel van het programma `cat` de inhoud van het bestand `README` uit te lezen. Hierin zal je het wachtwoord van level 1 terugvinden.
+
+Veel succes!
 
 # Tips & tricks
 
