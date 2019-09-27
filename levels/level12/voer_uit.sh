@@ -12,3 +12,5 @@ echoerr e
 echoerr r
 echo -n n
 echo -n t
+echo "" 1>&2
+echo ""

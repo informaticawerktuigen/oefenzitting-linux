@@ -13,5 +13,4 @@ antwoord=$(echo "$aantala * $aantalb * $aantalc" | bc)
 if [ $antwoord -eq 4320 ];
 then
     echo "Hoera, je hebt de oefenzitting volledig afgerond!"
-    base64 -d ../readmes/$(basename $(pwd)).base64
 fi
