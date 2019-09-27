@@ -3,7 +3,7 @@ if [ -d kopie ];
 then
     if [ -f kopie/bestand_met_inhoud ];
     then
-        cmp --silent bestand_met_inhoud kopie
+        cmp --silent kopie/bestand_met_inhoud map_met_inhoud/bestand_met_inhoud
         out=$?
         if [ $out -ne 0 ];
         then
