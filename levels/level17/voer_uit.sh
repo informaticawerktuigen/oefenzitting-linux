@@ -13,4 +13,6 @@ antwoord=$(echo "$aantala * $aantalb * $aantalc" | bc)
 if [ $antwoord -eq 4320 ];
 then
     echo "Hoera, je hebt de oefenzitting volledig afgerond!"
+    exit 0
 fi
+exit 1

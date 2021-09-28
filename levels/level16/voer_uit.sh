@@ -14,4 +14,6 @@ antwoord=$(echo "$aantalwoorden * $aantallijnen * $aantalkarakters * $aantalbyte
 if [ $antwoord -eq 1788672 ];
 then
     echo "fortunate"
+    exit 0
 fi
+exit 1
